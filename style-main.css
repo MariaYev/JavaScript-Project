@@ -1,0 +1,138 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 460px;
+    padding: 36px;
+    background: #ffffff;
+    border: 1px solid #dbe3ef;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+}
+
+.login-title {
+    margin: 0 0 28px;
+    text-align: center;
+    font-size: 28px;
+    color: #172554;
+}
+
+.login-form {
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.login-form h2 {
+    margin: 0 0 24px;
+    text-align: center;
+    font-size: 22px;
+    color: #000000;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.login-form button[type="submit"] {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #f75fe8;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    margin-bottom: 18px;
+}
+
+.login-form button[type="submit"]:hover {
+    background: #fd86ff;
+}
+
+.login-form button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+.forgot-password-button,
+.register-button {
+    display: block;
+    margin: 0 auto;
+    padding: 4px 0;
+    border: none;
+    background: transparent;
+    color: #676767;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.login-form .form-group:has(.forgot-password-button) {
+    margin-bottom: 5px;
+}
+
+.login-form .form-group:has(.register-button) {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.forgot-password-button:hover,
+.register-button:hover {
+    color: #202020;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 22px;
+    }
+
+    .login-title {
+        font-size: 24px;
+    }
+
+    .login-form {
+        padding: 20px;
+    }
+}

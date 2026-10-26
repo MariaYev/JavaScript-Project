@@ -3,10 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="main.js"></script>
+    <title>Linkin Bank</title>
+    <link rel="stylesheet" href="style-main.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
-    <h1>Linkin Bank</h1>
+    <main class="login-container">
+        <h1 class="login-title">Welcome to Linkin Bank</h1>
+        <form class="login-form">
+            <h2>Sign in</h2>
+            <div class="form-group">
+                <label for="username">Email or username</label>
+                <input type="text" id="username" name="username" placeholder="myemail@example.com" autocomplete="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password123$" required>
+            </div>
+            <button type="submit">Login</button>
+            
+            <div class="form-group">
+                <button type="button" class="forgot-password-button">Forgot your password?</button>
+            </div>
+            
+            <div class="form-group">
+                <button type="button" class="register-button">Don't have an account?</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
